@@ -1,0 +1,45 @@
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/img/beach_1.png) no-repeat;
+    background-size: cover;
+}
+
+#header-text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    //border:solid 1px black;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 3px!important;
+    text-transform: uppercase!important;
+    display: table;
+    color: #111;
+}
+
+#header-text-span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.opacity-lower{
+    opacity: .8;
+}
