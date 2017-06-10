@@ -15,7 +15,11 @@ video#bgvid {
     background-size: cover;
 }
 
-#header-text{
+#panel-2{
+    visibility: hidden;
+}
+
+.header-text{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -36,10 +40,23 @@ video#bgvid {
     color: #111;
 }
 
-#header-text-span {
+.header-text-span {
   display: table-cell;
   vertical-align: middle;
 }
 .opacity-lower{
     opacity: .8;
+}
+
+
+.moderate-the-text{
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 3px!important;
+    text-transform: uppercase!important;
+    text-decoration: underline;
+    color: #111;
+    opacity: .6;
 }

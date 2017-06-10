@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link rel="stylesheet" type="text/css" href="vendor/cssmap-continents/cssmap-continents/cssmap-continents.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
@@ -25,33 +26,64 @@
         </video>
 
         <!-- Add your site or application content here -->
-        <div id="header-text">
-            <span id="header-text-span">
+        <div class="header-text" id="panel-1">
+            <span class="header-text-span">
                 <span class="opacity-lower">WHERE DO </span>
                 <span
-                   class="opacity-lower"
+
                    style="
-                    //text-decoration: underline;
-                    padding-left:15px;
-                    padding-right:15px;
-                    border: solid black 5px;
-                    border-radius: 8px;
-                    background-color:white;
+                    text-decoration: underline;
+                    //padding-left:15px;
+                    //padding-right:15px;
+                    //border: solid black 5px;
+                    //border-radius: 8px;
+                    //background-color:white;
                 ">YOU</span>
                 <br/>
                 <span class="opacity-lower">WANT TO GO?</span> <br/>
 
-                <a href="" class="btn btn-primary" style="opacity: 1.0 !important;">
-                    <i class="fa fa-ban" aria-hidden="true" style="opacity: 1.0 !important;"></i> Click here to discover your adventure
+                <a href="#" class="btn btn-primary" style="opacity: 1.0 !important;" id="panel-1-click">
+                    <i class="fa fa-ban" aria-hidden="true" style="opacity: 1.0 !important;"></i> Click here to find the experience of a lifetime
                 </a>
             </span>
         </div>
 
+            <div class="header-text" id="panel-2">
+                <span class="header-text-span">
+                    <div class="moderate-the-text">Choose your dream destination</div>
+                    <!-- CSSMap - Continents -->
+                    <div id="map-continents">
+                     <ul class="continents">
+                      <li class="c1"><a href="/destinations/africa.html">Africa</a></li>
+                      <li class="c2"><a href="/destinations/asia.html">Asia</a></li>
+                      <li class="c3"><a href="/destinations/australia.html">Australia</a></li>
+                      <li class="c4"><a href="/destinations/europe.html">Europe</a></li>
+                      <li class="c5"><a href="/destinations/north-america.html">North America</a></li>
+                      <li class="c6"><a href="/destinations/south-america.html">South America</a></li>
+                     </ul>
+                    </div>
+                </span>
+            </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // CSSMap;
+                $("#map-continents").CSSMap({
+                  "size": 1450,
+                  "tooltips": "sticky",
+                  "responsive": "auto"
+                });
+                // END OF THE CSSMap;
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
